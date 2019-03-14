@@ -132,7 +132,7 @@ It only uses Cloud Haskell typed-channels, i.e., channels that can carry a value
 #### Remark
 Our decomposition breaks a process down into a series of trios and decomposed channels. In this (simple) example, the master process has a role of parallel composition. 
 
-  We may notice that `masterB` is not exactly a decomposition of parallel composition as it does not have a guard propagator for an activation  (denoted $c_k$ in the submission), which would be redundant here. 
+  We may notice that `masterB` is not exactly a decomposition of parallel composition as it does not have a guard propagator for an activation  (denoted _c_k_ in the submission), which would be redundant here. 
   
   Therefore, according to the breakdown of parallel composition, `masterB` spawns trios of broken down subprocesses and activates them with `sendChan c1 ()` and `sendChan c5 ()`. 
 
